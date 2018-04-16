@@ -5,55 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Guia do campus</title>
+    <title>GDC Blog</title>
     <link rel="stylesheet" href="./docs/css/main.css">
+    <link rel="stylesheet" href="./docs/css/card.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="#" class="marca">GDC</a>
-        <i id="abrir" class="fas fa-bars" onclick="abrir()"></i>
+    <header class="header">
+        <div class="navbar">
+            <a href="#">
+                <img class="logo" src="./docs/images/icon.png">
+            </a>
+            <i class="material-icons" id="abrir" onclick="abrir()">lightbulb_outline</i>
+        </div>
 
         <div id="menu">
-            <i id="fechar" class="fas fa-times" onclick="fechar()"></i>
+            <i class="material-icons" id="fechar" onclick="fechar()">lightbulb_outline</i>
             <div class="menu-content">
+
                 <div class="menu-link">
-                    <h2>MENU</h2>
-                    <a href="#">Página Inicial</a>
-                    <a href="#">Categorias</a>
+                    <h2>Menu</h2>
+                    <a href="#">Início</a>
                     <a href="#">O Guia</a>
+                    <a href="#">Categorias</a>
                     <a href="#">Equipe</a>
                     <a href="#">Contato</a>
                 </div>
 
-                <div class="social">
-                    <h2>Estamos por aqui!</h2>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-medium"></i></a>
+                <div class="menu-social">
+                    <h2>Redes Sociais</h2>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-medium"></i>
+                    </a>
                 </div>
+
             </div>
         </div>
-    </nav>
 
-    <header class="header">
         <div class="header-content">
-            <h1 class="header-h1">Guia do Campus.</h1>
-            <p class="header-p">Assuntos sobre tecnologia, ciência e desenvolvimento criativo.</p>
+            <h1>
+                < GUIA DO CAMPUS />
+            </h1>
+            <p>Escrito por
+                <a href="#">Breno Freitas</a>
+            </p>
         </div>
     </header>
 
-    <div class="section">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae velit architecto odio praesentium, hic debitis atque cum quaerat error? Facilis ratione totam quas placeat veritatis modi maxime! Cum, similique.</h1>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae velit architecto odio praesentium, hic debitis atque cum quaerat error? Facilis ratione totam quas placeat veritatis modi maxime! Cum, similique.</h1>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae velit architecto odio praesentium, hic debitis atque cum quaerat error? Facilis ratione totam quas placeat veritatis modi maxime! Cum, similique.</h1>
-    </div>
+    <section class="section">
+        <p class="section-id">Publicados recentemente:</p>
 
+        <div class="card">
+            <div class="card-content">
+                <div class="card-tags">
+                    <a href="#">hashtag maior fazendo</a>
+                    <a href="#">hashtag</a>
+                    <a href="#">hashtag</a>
+                    <a href="#">hashtag</a>
+                </div>
+                <img src="https://images.pexels.com/photos/159657/paint-notebook-brush-pencil-159657.jpeg?cs=srgb&dl=art-arts-and-crafts-brush-159657.jpg&fm=jpg" alt="">
+                <a href="#">
+                    <h1 class="card-h1">Guia do campus online - Ensinando</h1>
+                </a>
+                <div class="card-info">
+                    <p>16 Abr 2018 |
+                        <a href="#">Breno Freitas</a>
+                    </p>
+                </div>
+                <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, laudantium voluptas. Voluptatem enim ea
+                    necessitatibus quo omnis unde architecto obcaecati corporis illo similique? Sunt iste et consectetur
+                    corrupti vero? Doloribus?</p>
+            </div>
+            <div class="lermais">
+                <a href="#">Ler mais</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="./docs/javascripts/main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
-    <script src="./docs/javascript/main.js"></script>
 </body>
 
 </html>
