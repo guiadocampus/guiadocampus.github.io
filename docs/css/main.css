@@ -37,7 +37,7 @@ h1,h2,h3,h4{
 h1{
     margin: .3em 0;
     font-size: 2.6em;
-    line-height: 1em;
+    line-height: .9em;
 }
 
 h2{
@@ -50,8 +50,9 @@ p{
 }
 
 a{
-    font-size: 1em;
+    font-size: 1.05em;
     color: #121212;
+    font-weight:600;
 }
 
 a:hover{
@@ -77,15 +78,15 @@ a:hover{
     position: absolute;
     top: 0;
     right: 0;
-    margin: 12px .7em;
+    margin: 14px .7em;
 }
 
 #abrir{
-    color: #fefefe;
+    color: #FFF;
 }
 
 #fechar{
-    color: yellow;
+    color: #159df8;
 }
 
 .logo{
@@ -142,16 +143,57 @@ a:hover{
 
 .header-content{
     margin: -1px 0;
-    padding: 8em 0;
-    padding-left: 10%;
+    padding: 12em 2em;
     background-color: #1da3fc;
-    background: url('https://images.pexels.com/photos/317372/pexels-photo-317372.jpeg?cs=srgb&dl=blur-business-communication-317372.jpg&fm=jpg');
+    background: url('https://images.pexels.com/photos/889545/pexels-photo-889545.jpeg?dl&fit=crop&crop=entropy&w=1280&h=720');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-top: 5px solid #cb3837;
 }
 
-.header-content h1, .header-content p, .header-content a{
+.header-content h1, .header-content h3, .header-content p, .header-content a{
     color: #fefefe;
+}
+
+.footer{
+    padding: 2em;
+}
+
+.footer h2{
+    margin: .5em 0;
+}
+
+.footer-1 a{
+    display: inline-flex;
+    margin: 3px 0;
+    padding: 5px 10px;
+    background-color: #cb3837;
+}
+
+.footer-1 a:hover{
+    color: #fefefe !important;
+}
+
+.footer-2 {
+    font-weight: 400;
+    padding: 2em 0 !important;
+}
+
+.footer-2 a{
+    font-size: 1.3em;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+@media (min-width: 720px){
+    h1{
+        font-size: 2.6em;
+    }
+    p, a{
+        font-size: 1em;
+    }
+    .section{
+        max-width: 50%;
+    }
 }

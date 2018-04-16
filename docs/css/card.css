@@ -15,12 +15,13 @@
     margin: 3px;
     padding: 5px 12px;
     font-size: 1.05em;
-    background-color: #f4f4f4;
+    color: #121212;
+    background-color: #cb3837;
 }
 
 .card-tags a:hover{
-    background-color: #080808;
-    color: #eb3131 !important;
+    background-color: #cb3837;
+    color: #FFF !important;
 }
 
 .card-info p, .card-info a{
@@ -44,4 +45,23 @@
 
 .lermais a, .lermais a:hover{
     color: #888 !important;
+}
+
+.about{
+    padding: 8em 2em;
+    background-color: #fefefe;
+}
+
+@media (min-width: 720px){
+    .lermais{
+        width: 20%;
+    }
+
+    .card{
+        margin: 2em 0;
+    }
+
+    .about{
+        padding: 8em 10em;
+    }
 }
