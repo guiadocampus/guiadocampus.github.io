@@ -30,9 +30,6 @@ i{
     cursor: pointer;
 }
 
-h1,h2,h3,h4{
-    color: #121212 !importatn;
-}
 
 h1{
     margin: .3em 0;
@@ -158,10 +155,12 @@ a:hover{
 
 .footer{
     padding: 2em;
+    background-color: #222;
 }
 
-.footer h2{
-    margin: .5em 0;
+.footer h2, .footer p, .footer h1, .footer a{
+    margin: .1em 0;
+    color: #fefefe;
 }
 
 .footer-1 a{
@@ -175,25 +174,39 @@ a:hover{
     color: #fefefe !important;
 }
 
-.footer-2 {
-    font-weight: 400;
-    padding: 2em 0 !important;
-}
-
-.footer-2 a{
-    font-size: 1.3em;
-    line-height: 30px;
-    font-weight: 300;
+.footer-2{
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 720px){
     h1{
         font-size: 2.6em;
     }
+
     p, a{
         font-size: 1em;
     }
+
     .section{
-        max-width: 50%;
+        max-width: 52%;
+    }
+
+    #menu{
+        width: 35vw;
+    }
+
+    .header-content{
+        padding: 12em 10em;
+        background-color: #fefefe;
+    }
+
+    .menu-content a{
+        font-size: 1em;
+    }
+
+    .footer{
+        padding: 7em 10em;
     }
 }

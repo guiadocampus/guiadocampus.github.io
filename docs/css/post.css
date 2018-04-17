@@ -1,0 +1,38 @@
+
+body{
+    background-color: #eee !important;
+}
+
+.section{
+    width: 90% !important;
+    margin: 7em auto;
+    padding: 7em 15em;
+    background-color: #fefefe;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+h1{
+    font-size: 4em;
+    line-height: 1em;
+    color: #222;
+}
+
+h2{
+    margin: .5em 0;
+    color: #222;
+}
+
+p{
+    margin: 1em 0;
+    font-size: 1.1em;
+    font-weight: 300 !important;
+    color: #555;
+}
+
+ul{
+    margin: 1em 2em;
+}
+
+li{
+    margin: 5px 0;
+}
