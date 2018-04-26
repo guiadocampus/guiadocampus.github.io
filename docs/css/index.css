@@ -1,68 +1,8 @@
 
 .card{
-    background-color: #fefefe;
-    margin: 2em 0;
+    max-width: 100%;
+    margin: 1em 0;
     padding: 1em;
-    border-radius: 3px;
-    box-shadow: 0 3px 9px rgba(0,0,0,.2);
-    transition: all .2s linear;
+    border-bottom: 1px solid #c3c3c3;
+    border-radius: 1px;
 }
-
-.card:hover{
-    box-shadow: 0 5px 19px rgba(0,0,0,.3);
-    transition: all .2s linear;
-}
-
-.card a:hover{
-    background-color: #333;
-}
-
-.card h1{
-    font-size: 2em;
-    font-weight: 900;
-}
-
-.card-data{
-    color: #888;
-}
-
-.lermais{
-    width: 100%;
-    margin: 1em 0;
-    padding: 1.2em;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.lermais a{
-    position: relative;
-    margin: 1em 0;
-    padding: 10px 60px;
-    border-radius: 70px;
-    border: 1px solid #bababa;
-}
-
-.lermais a:hover{
-    background: none;
-    color: #222; 
-    border: 1px solid #888; 
-}
-
-.page-cont{
-    width: 100%;
-    padding: 2em 0;
-    padding-top: 1em;
-    text-align: center;
-}
-
-.page-cont a{
-    margin: 1em 2em;
-}
-
-@media (min-width: 780px){
-    .card{
-        width: 100%;
-    }
-}
-
-

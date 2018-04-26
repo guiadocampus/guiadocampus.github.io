@@ -1,64 +1,78 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;   
-}
-
-body{
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f5f5f5;
-}
-
-.section{
-    width: 90%;
-    margin: 0 auto;
-    padding: 1em 0;
-}
-
-.section-id{
-    margin: 2em 0;
-}
-
-img{
-    max-width: 100%;
-}
-
-i{
-    font-size: 2em !important;
-    cursor: pointer;
-}
-
-
-h1{
-    margin: .3em 0;
-    font-size: 2.6em;
-    line-height: .9em;
-}
-
-h2{
-    font-size: 1.8em;
-}
-
-p{
-    font-size: 1.2em;
-    color: #222;
-}
-
+/* padrões globais */
 a{
-    font-size: 1.05em;
-    color: #121212;
-    font-weight:600;
+    text-decoration: none;
+    color: #4285f4;
+    transition: all .1s linear;
+}
+
+a:hover > h1{
+    color: #4285f4 !important;
+    transition: all .1s linear;
 }
 
 a:hover{
-    width: auto;
-    color: #eb3131 !important;
+    color: #4285f4 !important;
 }
 
-.header{
-    max-width: 100%;
+i, a{
+    cursor: pointer;
+}
+
+h1{
+    margin: -1px 0 !important;
+    line-height: 32px;
+    font-size: 34px !important;
+    color: #212121;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.7em;
+}
+
+p{
+    font-size: 1.1em;
+    color: #454545;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.section-id{
+    color: #555;
+}
+
+#btnAbrir{
+    position: absolute;
+    top: 16px;
+    left: .5em;
+    color: #363636;
+    font-size: 2em;
+}
+
+/* padrões globais */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    padding-top: 64px;
 }
 
 .navbar{
@@ -66,147 +80,26 @@ a:hover{
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    max-height: 60px;
-    background-color: #121212;
-}
-
-#abrir, #fechar{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 14px .7em;
-}
-
-#abrir{
-    color: #FFF;
-}
-
-#fechar{
-    color: #159df8;
-}
-
-.logo{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#menu{
-    position: fixed;
-    width: 100%;
     max-width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    background-color: #fefefe;
+    background-color: #FFF;
+    height: 64px;
+    max-height: 64px;
 }
 
-.menu-content{
-    margin: 1em 2em;
-    color: #222;
-}
-
-.menu-content a{
-    color: #222;
-    margin: 5px 0;
-    font-size: 1.4em;
-    font-weight: 400;
-}
-
-.menu-link{
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-link h2{
-    margin-bottom: .5em;
-}
-
-.menu-social h2{
-    margin: .5em 0;
-}
-
-.menu-social{
+.navbar-content a{
     position: absolute;
-    width: 100%;
-}
-
-.menu-social a{
-    margin: 5px;
-    padding: 5px;
-    font-size: 1.6em;
-}
-
-.header-content{
-    margin: -1px 0;
-    padding: 12em 2em;
-    background-color: #1da3fc;
-    background: url('https://images.pexels.com/photos/889545/pexels-photo-889545.jpeg?dl&fit=crop&crop=entropy&w=1280&h=720');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: 5px solid #cb3837;
-}
-
-.header-content h1, .header-content h3, .header-content p, .header-content a{
-    color: #fefefe;
+    top: 15px;
+    left: 2.2em;
+    font-size: 1.8em;
+    color: #363636;
 }
 
 .footer{
-    padding: 2em;
-    background-color: #222;
+    padding: 5em 10%;
+    background-color: #f7f7f7;
+    text-align: center;
 }
+/* padrões mobile */
 
-.footer h2, .footer p, .footer h1, .footer a{
-    margin: .1em 0;
-    color: #fefefe;
-}
 
-.footer-1 a{
-    display: inline-flex;
-    margin: 3px 0;
-    padding: 5px 10px;
-    background-color: #cb3837;
-}
-
-.footer-1 a:hover{
-    color: #fefefe !important;
-}
-
-.footer-2{
-    margin: 2em 0;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 720px){
-    h1{
-        font-size: 2.6em;
-    }
-
-    p, a{
-        font-size: 1em;
-    }
-
-    .section{
-        max-width: 52%;
-    }
-
-    #menu{
-        width: 35vw;
-    }
-
-    .header-content{
-        padding: 12em 10em;
-        background-color: #fefefe;
-    }
-
-    .menu-content a{
-        font-size: 1em;
-    }
-
-    .footer{
-        padding: 7em 10em;
-    }
-}
+/* padrões desktop */
