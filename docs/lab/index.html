@@ -1,148 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GDC Blog</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/card.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./docs/css/main.css">
+	<link rel="stylesheet" href="./docs/css/index.css">
+	<link rel="stylesheet" href="./docs/css/normalize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="navbar">
-            <a href="#">
-                <img class="logo" src="../images/icon.png">
-            </a>
-            <i class="material-icons" id="abrir" onclick="abrir()">lightbulb_outline</i>
-        </div>
+	<nav class="navbar row">
+		<div class="navbar-content">
+			<i id="btnAbrir" class="material-icons" onclick="abrirMenu()">menu</i>
+			<a href="#">Guia do campus</a>
+		</div>
+	</nav>
 
-        <div id="menu">
-            <i class="material-icons" id="fechar" onclick="fechar()">lightbulb_outline</i>
-            <div class="menu-content">
+	<div id="menu">
+		<i id="btnFechar" class="material-icons" onclick="fecharMenu()">close</i>
+		<div class="menu-content">
+			<div class="menu-1 col">
+				<h2>MENU</h2>
+				<a href="#">Página Incial</a>
+				<a href="#">Categorias</a>
+				<a href="#">Sobre</a>
+				<a href="#">Equipe</a>
+				<a href="#">Contato</a>
+			</div>
 
-                <div class="menu-link">
-                    <h2>Menu</h2>
-                    <a href="#">Início</a>
-                    <a href="#">O Guia</a>
-                    <a href="#">Categorias</a>
-                    <a href="#">Equipe</a>
-                    <a href="#">Contato</a>
-                </div>
+			<div class="menu-1 col">
+				<h2>MENU</h2>
+				<a href="https://twitter.com/guiadocampus">twitter</a>
+				<a href="https://instagram.com/guiadocampus">instagram</a>
+				<a href="https://www.youtube.com/channel/UC8gikcbIH3Rq6bRV19LRHcA?view_as=subscriber">youtube</a>
+				<a href="https://github.com/guiadocampus">github</a>
+				<a href="https://medium.com/guiadocampus">medium</a>
+			</div>
+		</div>
+	</div>
 
-                <div class="menu-social">
-                    <h2>Redes Sociais</h2>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-medium"></i>
-                    </a>
-                </div>
+	<section class="section col">
+		<p class="section-id">Publicados recentemente</p>
+		<div class="card">
+			<a href="#"><h1>Título do post</h1></a>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a ducimus natus. Ad odit cumque fuga et tempora laudantium
+				accusantium, dolorem, quidem minima voluptas quibusdam atque, ipsum totam magnam explicabo?
+			</p>
+			<p class="card-data">Por:
+					<a href="#">Breno Freitas</a> | 26 Abr 2018
+				</p>
+		</div>
 
-            </div>
-        </div>
+		<div class="card">
+				<a href="#"><h1>Título do post</h1></a>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a ducimus natus. Ad odit cumque fuga et tempora laudantium
+					accusantium, dolorem, quidem minima voluptas quibusdam atque, ipsum totam magnam explicabo?
+				</p>
+				<p class="card-data">Por:
+						<a href="#">Breno Freitas</a> | 26 Abr 2018
+					</p>
+			</div>
 
-        <div class="header-content">
-            <h1>
-                < GUIA DO CAMPUS />
-            </h1>
-            <h3>Feito por estudantes para estudantes.</h3>
-        </div>
-    </header>
+	</section>
 
-    <section class="section">
-        <p class="section-id">Publicados recentemente:</p>
+	<footer class="footer col">
+		<div class="footer-content">
+			<p>2018 - Guia do Campus</p>
+			<p>Em desenvolvimento...</p>
+		</div>
+	</footer>
 
-        <div class="card">
-            <div class="card-content">
-                <div class="card-tags">
-                    <a href="#">hashtag maior fazendo</a>
-                    <a href="#">hashtag</a>
-                    <a href="#">hashtag</a>
-                    <a href="#">hashtag</a>
-                </div>
-                <a href="#">
-                    <h1 class="card-h1">#00 Guia de introdução do Campus</h1>
-                </a>
-                <div class="card-info">
-                    <p>16 Abr 2018 |
-                        <a href="#">Breno Freitas</a>
-                    </p>
-                </div>
-                <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, laudantium voluptas. Voluptatem enim ea
-                    necessitatibus quo omnis unde architecto obcaecati corporis illo similique? Sunt iste et consectetur
-                    corrupti vero? Doloribus?</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-tags">
-                    <a href="#">hashtag maior fazendo</a>
-                    <a href="#">hashtag</a>
-                    <a href="#">hashtag</a>
-                    <a href="#">hashtag</a>
-                </div>
-                <a href="#">
-                    <h1 class="card-h1">Guia do campus online - Ensinando</h1>
-                </a>
-                <div class="card-info">
-                    <p>16 Abr 2018 |
-                        <a href="#">Breno Freitas</a>
-                    </p>
-                </div>
-                <p class="card-p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, 
-                    laudantium voluptas. Voluptatem enim ea
-                    necessitatibus quo omnis unde architecto obcaecati corporis
-                    illo similique? Sunt iste et consectetur
-                    corrupti vero? Doloribus?
-                </p>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="about">
-        <h2>GDC - Guia do Campus</h2>
-        <p>É espaço virtual e descontraído, dedicado a compartilhar conhecimentos 
-            e ideias, <br> sobre tecnologia, design, ciência e outros assuntos.</p>
-        <br>
-        <p>Em breve mostraremos como você pode participar!</p>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-1">
-            <h2>Tags populares</h2>
-            <a href="#">Design</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Desenvolvimento Web</a>
-            <a href="#">Programação</a>
-            <a href="#">FIlmes e Séries</a>
-        </div>       
-
-        <div class="footer-3">
-            <p>Desenvolvido por: <a href="#">Breno Freitas</a></p>
-            <p>Versão atual - 0.0.7</p>
-        </div>
-    </footer>
-
-    <script src="../javascripts/main.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-        crossorigin="anonymous"></script>
+	<script src="./docs/javascript/main.js"></script>
 </body>
 
 </html>

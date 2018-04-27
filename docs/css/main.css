@@ -12,7 +12,7 @@ a:hover > h1{
     transition: all .1s linear;
 }
 
-a:hover{
+a:hover, i:hover{
     color: #4285f4 !important;
 }
 
@@ -21,13 +21,14 @@ i, a{
 }
 
 h1{
-    margin: -1px 0 !important;
-    line-height: 32px;
+    margin: 5px 0 !important;
+    line-height: 1em;
     font-size: 34px !important;
     color: #212121;
 }
 
 h2{
+    margin: 0;
     font-size: 2em;
 }
 
@@ -36,9 +37,15 @@ h3{
 }
 
 p{
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #454545;
 }
+
+li{
+    font-size: 1.2em;
+    color: #363636 !important;
+}
+
 
 .row{
     display: flex;
@@ -51,11 +58,13 @@ p{
 }
 
 .section{
-    max-width: 95%;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 2em auto;
 }
 
 .section-id{
+    margin: 1em;
+    margin-bottom: 1em;
     color: #555;
 }
 
@@ -67,11 +76,19 @@ p{
     font-size: 2em;
 }
 
+#btnFechar{
+    position: absolute;
+    top: 16px;
+    right: .5em;
+    font-size: 2em;
+}
+
+
 /* padrões globais */
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #fafafa;
+    background-color: #fefefe;
     padding-top: 64px;
 }
 
@@ -81,9 +98,10 @@ body{
     left: 0;
     width: 100%;
     max-width: 100%;
-    background-color: #FFF;
+    background-color: #fafafa;
     height: 64px;
     max-height: 64px;
+    box-shadow: 1px 0 3px rgba(0,0,0,.3);
 }
 
 .navbar-content a{
@@ -94,12 +112,43 @@ body{
     color: #363636;
 }
 
+#menu{
+    position: fixed;
+    top: 0;
+    left: -90%;
+    width: 80%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    box-shadow: 3px 0 9px rgba(0,0,0,.2);
+}
+
+.menu-content{
+    padding: 2em 2em;
+}
+
+.menu-content a{
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #454545;
+}
+
 .footer{
     padding: 5em 10%;
-    background-color: #f7f7f7;
+    background-color: #fafafa;
     text-align: center;
+}
+
+.footer p{
+    color: #222 !important;
 }
 /* padrões mobile */
 
 
 /* padrões desktop */
+
+@media (min-width: 780px) {
+    .section{
+        width: 50%;
+    }
+}
