@@ -1,10 +1,9 @@
-
-function abrirMenu(){
-    document.getElementById("menu").style.left = "0";
+function abrir(){
+    document.getElementById("menu").style.right = "0vw ";
+    document.getElementById("menu").style.transition = "all .2s linear";
+}
+function fechar(){
+    document.getElementById("menu").style.right = "-100vw";
     document.getElementById("menu").style.transition = "all .2s linear";
 }
 
-function fecharMenu(){
-    document.getElementById("menu").style.left = "-100%";
-    document.getElementById("menu").style.transition = "all .2s linear";
-}
