@@ -94,7 +94,7 @@ body{
 #menu{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -111vw;
     padding: .1em 1em;
     font-size: 17pt;
     height: 100vh;
