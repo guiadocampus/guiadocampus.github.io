@@ -4,55 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Guia Do Campus</title>
-    <script src="./docs/javascript/main.js"></script>
+    <title>Guia do Campus</title>
     <link rel="stylesheet" href="./docs/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <script src="./docs/js/main.js"></script>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar"> 
-            <a href="#" class="mainlink">GUIA DO CAMPUS</a>
-            <i class="material-icons" id="menuOpen" onclick="abrir();">menu</i>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#">GUIA DO CAMPUS</a>
+            </div>
+
+            <i id="menuOpen" class="material-icons" onclick="abrir()">menu</i>
         </nav>
 
-        <menu id="menu">
-            <i class="material-icons" id="menuClose" onclick="fechar();">close</i>
-            <div class="menu-content">
-                <h2>Menu</h2>
-                <a href="#">Página Inicial</a>
-                <a href="./docs/pages/categorias.html">Categorias</a>
-                <a href="#">Todos os posts</a>
-                <a href="./docs/pages/sobre.html">Sobre</a>
-
-                <div class="social">
-                    <h2>Social</h2>
-                    <a href="#">twitter -</a>
-                    <a href="#">instagram -</a>
-                    <a href="#">youtube -</a>
-                    <a href="#">github</a>
-                </div>
+        <div id="menu" class="content menu">
+            <i id="menuClose" class="material-icons" onclick="fechar()">close</i>
+            <div class="content-menu">
+                <h1>Menu</h1>
+                <a href="#">Início</a>
+                <a href="#">Categorias</a>
+                <a href="#">Sobre</a>
+                <a href="#">Equipe</a>
             </div>
-        </menu>
+
+            <div class="content-menu social">
+                <h1>Redes Sociais</h1>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Medium</a>
+                <a href="#">Youtube</a>
+                <a href="#">Github</a>
+            </div>
+        </div>
+
+        <div class="header-content">
+            <h1>GUIA DO CAMPUS</h1>
+            <p>Feito por estudantes, para estudantes.</p>
+        </div>
     </header>
 
     <div class="content">
-        <div class="card">
-            <p class="tag">MECATRÔNICA</p>
-            <a href="./docs/posts/qual-a-diferenca-entre-mecatronica-e-controle-e-automacao.html" class="card-link"><h1>Qual a diferênça de mecatrônica, para controle e automação?</h1></a>
-            <p class="about">Por <a href="#">Breno Freitas</a> em Segunda Feira, 06 agosto 2018</p>
+        <div class="post">
+            <h1><a href="#">Link do post</a></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet accusamus, minus natus temporibus numquam dicta suscipit nobis saepe sit quis, ducimus provident voluptatibus nam, nulla tempore aperiam corporis iste.</p>
+            <p>Publicado por <a href="#">Breno Freitas</a> em 23 agosto 2018 </p>
         </div>
-
-        <div class="card">
-                <p class="tag">MECATRÔNICA</p>
-                <a href="#" class="card-link"><h1>Qual a diferênça de mecatrônica, para controle e automação?</h1></a>
-                <p class="about">Por <a href="#">Breno Freitas</a> em Segunda Feira, 06 agosto 2018</p>
-            </div>
+        <div class="post">
+            <h1><a href="#">Link do post</a></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet accusamus, minus natus temporibus numquam dicta suscipit nobis saepe sit quis, ducimus provident voluptatibus nam, nulla tempore aperiam corporis iste.</p>
+            <p>Publicado por <a href="#">Breno Freitas</a> em 23 agosto 2018 </p>
+        </div>
+        <div class="post">
+            <h1><a href="#">Link do post</a></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet accusamus, minus natus temporibus numquam dicta suscipit nobis saepe sit quis, ducimus provident voluptatibus nam, nulla tempore aperiam corporis iste.</p>
+            <p>Publicado por <a href="#">Breno Freitas</a> em 23 agosto 2018 </p>
+        </div>
     </div>
 
-    <footer class="footer">
-        <p>Desenvolvido por <a href="#">Breno Freitas</a> - 2018</p>
+    <footer class="content footer">
+        <p>Em desenvolvimento - Breno Freitas - 2018</p>
     </footer>
 </body>
 </html>

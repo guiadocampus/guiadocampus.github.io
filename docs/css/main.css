@@ -1,202 +1,127 @@
-*{
+a{
     text-decoration: none;
+    transition: all .2s ease;
+    color: #333 !important;
+}
+
+a:hover{
+    color: #54b6f7 !important;
+    transition: all .2s ease;
 }
 
 h1{
-    font-size: 1.8em;
-    color: #111;
+    font-size: 2em;
+    color: #333 !important;
 }
 
 h2{
-    font-size: 1.4em;
-    color: #222;
+    font-size: 1.7em;
 }
 
 p{
+    font-size: 17px;
     color: #444;
-    font-size: .9em;
-}
-
-a, i{
-    cursor: pointer !important;
-}
-
-.content{
-    max-width: 85%;
-    margin: 0 auto;
-    padding: 3em 0em;
-}
-
-
-a:hover, i:hover{
-    color: #1485e0 !important;
 }
 
 body{
+    position: relative;
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue LT", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    background-color: #fefefe;
+    font-size: 17px;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+
+.header{
+    height: 80vh;
 }
 
 .navbar{
-    max-height: 3.2em;
+    position: fixed;
     display: flex;
-    background-color: #46a9fa;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: #202020;
 }
 
 .navbar a{
-    color: #fefefe;
-    font-size: 16pt;
+    color: #54b6f7;
 }
 
-.mainlink{
-    font-size: 17pt;
-    padding: 1em;
-}
-
-.mainlink:hover{
-    color: #165c8b !important;
-}
-
-#menuOpen{
+.navbar-left{
     position: absolute;
-    top: 15px;
+    margin: 1em;
+    left: 0;
+}
+
+.navbar-left a{
+    position: absolute;
+    top: -.6em;
+    left: 1em;
+    color: #FFF !important;    
+}
+
+.navbar-right a{
+    margin: 3px 5px;
+}
+
+.header-content{
+    width: 80%;
+    padding: 30vh 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menuOpen, #menuClose{
+    position: absolute;
+    top: .45em;
     right: 1em;
-    font-size: 24pt;
+    font-size: 1.7em;
     color: #fefefe;
 }
 
 #menuClose{
-    position: absolute;
-    margin: 20px;
-    top: 0;
-    right: 0;
-    font-size: 22pt;
-    color: #303030;
+    color: #202020;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
 }
 
 #menu{
     position: fixed;
-    margin: 0;
     top: 0;
-    right: -100%;
-    max-width: 90vw;
+    right: 0;
+    padding: .1em 1em;
+    font-size: 17pt;
     height: 100vh;
-    background-color: #fefefe;
-    box-shadow: -3px 0 9px rgba(0,0,0,.2);
+    background-color: #fafafa;
 }
 
-.menu-content{
-    width: 90%;
+.content-menu{
+    padding: 0 1em;
     display: flex;
     flex-direction: column;
 }
 
-.menu-content a, .social a{
-    margin: .5em 0px;
-    color: #2f5774 !important;
-}
-
-.menu-content a:hover, .social a:hover{
-    margin: .5em 0px;
-    color: #1485e0 !important;
-}
-
-.publications{
-    padding: 3em;
-    max-width: 90vw;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-.card{
-    padding: 1em 0;
+.post{
     margin: 1em 0;
-    border-bottom: 1px solid #969da7;
-}
-
-.tag{
-    color: #969da7;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 5px;
-}
-
-.card p{
-    color: #95abb4;
-}
-
-.card a{
-    color: #63ace7;
-}
-
-.card-link h1{
-    font-size: 20pt;
-    color: #5d8596;
-    transition: all .1s linear;
-}
-
-.card-link h1:hover{
-    color: #101010 !important;
-    transition: all .1s linear;
+    border-bottom: 1px solid #888;
 }
 
 .footer{
-    margin: 0 auto;
-    text-align: center !important;
-    padding: 3em 0;
-    color: #5d8596;
+    padding: 4em 0em;
+    padding-bottom: 1em;
+    text-align: center;
 }
 
-.footer a{
-    color: #5d8596 !important;
-}
-
-.categorias{
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 2em;
-    font-size: 15pt;
-}
-
-.categorias a{
-    margin: 3px 0;
-    padding: 10px;
-    transition: all .1s linear;
-    color: #5d8596;
-}
-
-.categorias a:hover{
-    border-left: 3px solid #1485e0;
-    transition: all .1s linear;
-}
-
-
-@media (min-width: 900px) {
-    
-    #menu{
-        position: fixed;
-        top: 0; 
-        margin: 0;
-        width: 20vw;
-        height: 100vh;
-        background-color: #fefefe;
-        box-shadow: -3px 0 9px rgba(0,0,0,.2);
-    }
-
+@media (min-width: 700px) {
     .content{
-        width: 50%;
-        margin: 0 auto;
+        max-width: 60%;
+        margin: 2em auto;
+        line-height: 1em;
     }
-    
-
-    .card-link h1{
-        font-size: 27pt;
-    }
-  }
-  
+}
